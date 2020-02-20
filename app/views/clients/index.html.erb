@@ -1,0 +1,8 @@
+<h1>Clients</h1>
+<%= link_to "Add a Client", new_client_path %>
+<% if @clients.any? %>
+<div class="row">
+  <% else %>
+  <p>No clients yet.</p>
+  <% end %>
+  <%= render partial: "client_index", collection: @clients, as: :client %>

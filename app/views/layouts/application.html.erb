@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AppointmentLog</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+<%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %> <%= csrf_meta_tags %>
+</head>
+<body class="<%= body_class %>">
+
+ <%= render "layouts/navbar" %>
+
+ <%= content_tag(:div, flash[:error], id: "flash_error", class: "container") if flash[:error] %>
+ <%= content_tag(:div, flash[:notice], id: "flash_notice", class: "container") if flash[:notice] %>
+ <%= content_tag(:div, flash[:alert], id: "flash_alert", class: "container") if flash[:alert] %>
+
+ <div class="main container">
+   <%= yield %>
+ </div>
+
+<script type="text/javascript">
+  $('.datepicker').datepicker({
+      weekStart:1,
+      color: 'red'
+  });
+ </script>
+</body>
+</html>
