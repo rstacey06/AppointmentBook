@@ -17,4 +17,5 @@ class Location < ActiveRecord::Base
 
   validates :nickname, presence: true
 
+
 end
