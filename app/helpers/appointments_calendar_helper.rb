@@ -39,4 +39,5 @@ module AppointmentsCalendarHelper
   def date_of_last(day)
     date_of_next(day) - 7.days
   end
+
 end
