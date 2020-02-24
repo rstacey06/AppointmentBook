@@ -11,7 +11,7 @@ class Client < ActiveRecord::Base
     @appointment_count ||= appointments.count
   end
 
-  ## Validations
+  # Validations
 
   validates :name, presence: true
   validates :email, format: { with: /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i, message: 'Please enter a valid email address' }, allow_blank: true
@@ -31,7 +31,5 @@ class Client < ActiveRecord::Base
   end
 
   validates_with UserIdValidator
-
-  ##
 
 end
