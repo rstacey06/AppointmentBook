@@ -71,5 +71,4 @@ class AppointmentsController < ApplicationController
   def appointment_params
     params.require(:appointment).permit(:client_id, :price, :location_id, location_attributes: [:nickname], client_attributes: [:name], appointment_time: [:date, :hour, :min], duration: [:hour, :min])
   end
-
 end
