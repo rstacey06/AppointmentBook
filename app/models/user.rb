@@ -17,7 +17,6 @@ class User < ActiveRecord::Base
   end
 
   def upcoming_appointments
-    appointments.order(appointment_time: :desc).select { |a| a.appointment_time > (DateTime.now) }
+    appointments.order(appointment_time: :asc).select { |a| a.appointment_time > (DateTime.now) }
   end
-
 end
