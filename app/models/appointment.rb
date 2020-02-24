@@ -22,17 +22,17 @@ class Appointment < ActiveRecord::Base
       location.nickname if location
     end
 
-    ## Form Parsing methods
+    # parse form methods
 
-    def client_attributes=(atts)
-      if atts[:name] != ""
-        self.client = self.user.clients.find_or_create_by(atts)
+    def client_attributes=(attr)
+      if attr[:name] != ""
+        self.client = self.user.clients.find_or_create_by(attr)
       end
     end
 
-    def location_attributes=(atts)
-      if atts[:nickname] != ""
-        location = self.user.locations.find_or_create_by(atts)
+    def location_attributes=(attr)
+      if attr[:nickname] != ""
+        location = self.user.locations.find_or_create_by(attr)
         self.location = location
       end
     end

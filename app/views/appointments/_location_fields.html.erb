@@ -9,9 +9,9 @@
 <p><% if current_user.locations.any? %>Or <% end %>Create a New Location</p>
 <div class="field">
   <p>
-    <%= f.fields_for :location, Location.new do |location_atts| %>
-      <%= location_atts.label :nickname %>
-      <%= location_atts.text_field :nickname %>
+    <%= f.fields_for :location, Location.new do |location_attr| %>
+      <%= location_attr.label :nickname %>
+      <%= location_attr.text_field :nickname %>
     <% end %>
   </p>
 </div>
