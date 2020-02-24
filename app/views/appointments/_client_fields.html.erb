@@ -6,10 +6,12 @@
   </p>
 </div>
 <% end %>
-<p><% if current_user.clients.any? %>Or <% end %>Create a New Client</p>
+<p>
+  <% if current_user.clients.any? %>Or <% end %>Create a New Client
+</p>
 <div class="field">
   <%= f.fields_for :client, Client.new do |ff| %>
-    <%= ff.label :name %>
-    <%= ff.text_field :name %>
+  <%= ff.label :name %>
+  <%= ff.text_field :name %>
   <% end %>
 </div>
