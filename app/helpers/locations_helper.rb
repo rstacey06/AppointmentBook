@@ -22,8 +22,8 @@ module LocationsHelper
 
   def edit_delete_links(location)
     output = [
-      link_to("Edit", edit_location_path(location), class: "btn btn-secondary"),
-      link_to("Delete", location, method: :delete, class: "btn btn-danger", data: { confirm: "Are you sure you really want to delete this location" })
+      link_to("Edit,", edit_location_path(location), class: "btn btn-secondary"),
+      link_to(" Delete", location, method: :delete, class: "btn btn-danger", data: { confirm: "Are you sure you want to delete location" })
     ]
     safe_join(output)
   end

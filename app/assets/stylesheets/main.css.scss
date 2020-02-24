@@ -1,4 +1,4 @@
-$link-color: blue;
+$link-color: black;
 $link-hover-color: lighten($link-color, 55);
 $nav-color: #FFC970;
 $menu-item-background-color: $nav-color;
@@ -19,7 +19,7 @@ body {
 }
 
 .home .main {
-  text-shadow: 2px 2px black;
+  text-shadow: 2px 2px navy;
   text-align: left;
   font-family: Sans-Serif;
 }
@@ -92,9 +92,9 @@ h1 a:hover {
 // Form Styles //
 
 form {
-    width: 400px;
-    border: 2px solid black;
-    padding: 30px 20px;
+    width: 300px;
+    border: 1px solid black;
+    padding: 20px 20px;
     border-radius: 5px;
     background: lightgray;
 }
@@ -130,7 +130,7 @@ label:after {
 }
 
 .btn.btn-secondary {
-    background-color: lightcyan;
+    background-color: white;
 }
 
 @media screen and (max-width: 768px) {

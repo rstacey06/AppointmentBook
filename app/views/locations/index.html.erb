@@ -1,20 +1,6 @@
 <h1>Locations</h1>
 <%= link_to "Add a Location", new_location_path %>
 <% if @locations.any? %>
-<div class="row">
-  <!-- <div class="col-sm-3 hidden-xs">
-    <h3>Nickname</h3>
-  </div>
-  <div class="col-sm-3 hidden-xs">
-    <h3>Address</h3>
-  </div>
-  <div class="col-sm-3 hidden-xs">
-    <h3>Clients</h3>
-  </div>
-  <div class="col-sm-3 hidden-xs">
-    <h3>Appointments</h3>
-  </div> -->
-</div>
 <% else %>
 <p>No locations yet.</p>
 <% end %>
