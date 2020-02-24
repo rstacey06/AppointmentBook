@@ -1,4 +1,5 @@
 module ClientsHelper
+
   def client_email(client)
       client.email if client.email != ""
     end

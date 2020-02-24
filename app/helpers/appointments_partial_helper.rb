@@ -1,5 +1,5 @@
 module AppointmentsPartialHelper
-  
+
   def appointment_heading(appointment)
     if current_page?(appointment_path(appointment))
       content_tag(:h3, link_to(show_client_name(appointment), client_path(appointment.client) ) )
@@ -24,7 +24,7 @@ module AppointmentsPartialHelper
 
   def appointment_edit_delete_links(appointment)
     links = [link_to("Edit", edit_appointment_path(appointment) ),
-    link_to("Delete", appointment, method: :delete, data: { confirm: "Are you sure you want to delete this appointment?" } )]
-    safe_join(links, ", ")
+      link_to("Delete", appointment, method: :delete, data: { confirm: "Are you sure you want to delete this appointment?" } )]
+      safe_join(links, ", ")
   end
 end
