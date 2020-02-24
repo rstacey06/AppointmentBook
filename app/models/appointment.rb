@@ -69,7 +69,7 @@ class Appointment < ActiveRecord::Base
       hash["hour"].to_i + hash["min"].to_i
     end
 
-    ## Validations
+    # Validations
 
     validates :duration, presence: true, numericality: { greater_than_or_equal_to: 0 }
     validates :appointment_time, presence: { message: "must be a valid date" }
