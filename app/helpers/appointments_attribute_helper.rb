@@ -31,5 +31,4 @@ module AppointmentsAttributeHelper
     content_tag(:p, appointment.location_name )
   end
 
-
 end
