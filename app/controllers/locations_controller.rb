@@ -5,7 +5,7 @@ class LocationsController < ApplicationController
   def index
     @locations = current_user.locations
   end
- 
+
  def client_list
    @clients = @location.clients
  end
@@ -58,4 +58,5 @@ class LocationsController < ApplicationController
  def location_params
    params.require(:location).permit(:nickname, :street_address, :city, :state, :zipcode, :business_name)
  end
+
 end
