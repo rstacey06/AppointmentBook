@@ -39,4 +39,5 @@ module LocationsHelper
   def client_count(location)
     link_to pluralize(location.client_count, 'client'), client_list_path(location)
   end
+
 end
