@@ -1,4 +1,5 @@
 module AppointmentsFormHelper
+
   def client_fields(form, appointment, client)
     if client
       output = [content_tag(:h3, "with #{client.name}"), hidden_field_tag("appointment[client_id]", client.id)]
@@ -104,9 +105,4 @@ module AppointmentsFormHelper
   def float_two_decimals(price)
     '%.2f' % price if price
   end
-
-  # def parse_time(array)
-  #   DateTime.parse(array["date"] + " " + array["hour"] + ":" + array["min"])
-  # end
-
 end
