@@ -37,6 +37,8 @@ class Appointment < ActiveRecord::Base
       end
     end
 
+    #custom setter called upon receving a hash(mass assignment) from the appointment#create actions, also accepts a time object for testing
+    #when called on a hash the parse_datetime method is called on the hash to produce a datetime object that can be save in DB 
     def appointment_time=(time)
       if time.is_a?(Hash)
         self[:appointment_time] = parse_datetime(time)
