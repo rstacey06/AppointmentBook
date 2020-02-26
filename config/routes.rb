@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   resources :clients do
     resources :appointments, only: [:index, :show, :new]
   end
+  #nested routes above
+
   devise_for :users, controllers: { omniauth_callbacks: "users/omniauth_callbacks" }
   get 'welcome/home'
   root 'welcome#home'
