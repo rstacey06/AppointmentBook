@@ -25,13 +25,13 @@ Press CTRL + O to save, hit return to save the file as .env, press CTRL + X to e
 Now you should be able to run rails server and test out the app.
 
 # Usage
-Sign up for an account
-Click the "+ New" button at the top of the page
-Fill in the form on the left to create your first client and appointment (i.e. Fill in Top field with "My first client", and the bottom field with "My first location")
-Click the Create Appointment Button
-Your new appointment should appear on your calendar.
-To Reschedule your appointment, click on the appointment in your calendar and you'll be taken to the edit appointment form. Make your changes and submit the form to change your appointment.
-Click on the Clients link in the top navigation menu and you should see a list of your clients ("My first client" should be at the top). Click on the edit button below the client's name to add contact information.
-In the right hand column there is a button to add a new appointment with "My first client".
-Click on the Locations link in the top navigation menu and you'll see a list of your locations ("My first location" should be at the top). Click on the edit button below the location's name to add an address.
-In the right hand column there is a button to add a new appointment at "My first location".
+* Sign up for an account
+* Click the "+ New" button at the top of the page
+* Fill in the form on the left to create your first client and appointment (i.e. Fill in Top field with "My first client", and the bottom field with "My first location")
+* Click the Create Appointment Button
+* Your new appointment should appear on your calendar.
+* To Reschedule your appointment, click on the appointment in your calendar and you'll be taken to the edit appointment form. Make your changes and submit the form to change your appointment.
+* Click on the Clients link in the top navigation menu and you should see a list of your clients ("My first client" should be at the top). Click on the edit button below the client's name to add contact information.
+* In the right hand column there is a button to add a new appointment with "My first client".
+* Click on the Locations link in the top navigation menu and you'll see a list of your locations ("My first location" should be at the top). Click on the edit button below the location's name to add an address.
+* In the right hand column there is a button to add a new appointment at "My first location".
