@@ -1,25 +1,14 @@
-# README
+# AppointmentBook
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A Ruby on Rails app for keeping track of appointments, clients and locations.
 
-Things you may want to cover:
+# Features
 
-* Ruby version
+* Keep track of appointments with multiple clients in multiple locations.
+* Reschedule or cancel appointments
+* Add Clients and Locations and track appointments by client and location.
+* Keep track of income earned from clients and/or locations.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
 
 * ...
-# x
+#
